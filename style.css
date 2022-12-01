@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------navbar--------------------------- */
+.navbar{
+    z-index: 999;
+    position: fixed;
+    padding: 0 2rem 0 2rem;
+    height: 7rem;
+    background-color: rgba(54,69,75,0.6);
+}
+.navbar_a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    bottom: 2rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-left: 1rem;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#royal_logo{
+    
+    margin-top: 1rem;
+}
+#home{
+    position: relative;
+    bottom: 1.5rem;
+    margin-left: 36.6rem;
+}
+
+/* ----------------------sliding images--------------------------- */
+
+#slide_show img{
+    /* transition-duration: 3s; */
+    /* transition: 2s; */
+    animation: imageglow 1s;
+    height: 100vh;
+    width: 100%;
+}
+@keyframes imageglow {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#slide_show .slide_btn{
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.687);
+    height: 60px;
+    width: 60px;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    padding-top: 0.7rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#slide_show #left{
+    position: absolute;
+    top: 20rem;
+    left: 3rem;
+
+}
+#slide_show #right{
+    position: absolute;
+    top: 20rem;
+    right: 2rem;
+}
+#slide_show button{
+    width: 10rem;
+    height: 4rem;
+    background-color: rgb(75,143,197);
+    border: none;
+    position: absolute;
+    font-weight: 700;
+    line-height: 24px;
+    color: aliceblue;
+    font-size: 1.2rem;
+    z-index: 1;
+    left: 23rem;
+    top: 35rem;
+}
+
+#slide_img_text{
+    display: inline;
+    /* animation: textslide 1s; */
+    color: rgba(0, 0, 0, 0.84);
+    font-weight: 900;
+    position: absolute;
+    font-size: 57px ;
+    font-weight: 700;
+    line-height: 71px;
+    top: 28rem;
+    left: 11rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#slide_show+div{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    /* justify-content: ; */
+    gap: 10rem;
+}
+
+.sb{
+    display: inline;
+    /* padding: 1rem 2rem; */
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px skyblue;
+}
+
+
+
+#seminar{
+    background-color: #0093E9;
+    background-image: linear-gradient(90deg, #0093E9 0%, #80D0C7 100%);
+    box-shadow: 20px;
+    color: white;
+    padding: 0.5rem 4rem;
+    margin-left: 15rem;
+}
+
+#seminar:hover{
+    animation: buttonglow 2s;
+    
+}
+
+#bootcamp{
+    background-color: #0093E9;
+    background-image: linear-gradient(90deg, #0093E9 0%, #80D0C7 100%);
+    color: white;
+    padding: 0.5rem 4rem;
+    
+}
+
+#bootcamp:hover{
+    animation: buttonglow 2s;
+}
+
+@keyframes buttonglow {
+    from{
+        opacity: 35%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+/* <!-- ----------------------- youtube videos ----------------------- --> */
+.ytcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem 11rem;
+    /* margin: 1rem; */
+    background: rgb(215,215,215);
+    background: linear-gradient(90deg, rgba(215,215,215,1) 0%, rgba(255,255,255,1) 47%, rgba(215,215,215,1) 100%);
+}
+
+.addvertise{
+    width: 35rem;
+    margin-top: 5rem;
+    box-shadow: 3px 3px 10px black;
+}
