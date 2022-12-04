@@ -39,7 +39,7 @@
     /* transition-duration: 3s; */
     /* transition: 2s; */
     animation: imageglow 1s;
-    height: 100vh;
+    height: 45rem;
     width: 100%;
 }
 @keyframes imageglow {
@@ -114,8 +114,6 @@
 
 .sb{
     display: inline;
-    /* padding: 1rem 2rem; */
-    /* border: 2px solid red; */
     border-radius: 10px;
     box-shadow: 5px 5px 5px skyblue;
 }
@@ -170,5 +168,66 @@
 .addvertise{
     width: 35rem;
     margin-top: 5rem;
+    box-shadow: 3px 3px 10px black;
+}
+
+/* <!-- -----------------------  welcoming ----------------------- --> */
+.welcomes{
+    display: flex;
+    /* flex */
+    padding: 5rem 11rem;
+}
+
+.welcomes .welcome-text{
+    margin-right: 1rem;
+}
+
+.welcomes .welcome-text h2{
+    margin: 1rem 0;
+    font-weight: 700;
+    font-size: 1.9rem;
+    line-height: 40px;
+    color: #34302f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.img-below-dhirajimg{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-below-dhirajimg div{
+    width: 8rem;
+    /* margin-right: 2rem; */
+}
+
+.welcomes .welcome-text p{
+    margin: 1rem 0;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 20px;
+    color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.welcomes ul li{
+    margin: 2rem 0;
+    /* padding-bottom: 3px; */
+    list-style: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+    /* line-height: 25px; */
+    color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.welcomes ul li::before{
+    margin-right: 0.5rem;
+    content: url("images/arrow_right.png");
+}
+
+.welcome-img>img{
+    margin-bottom: 3rem;
     box-shadow: 3px 3px 10px black;
 }
